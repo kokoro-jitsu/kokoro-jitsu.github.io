@@ -235,6 +235,22 @@ section { padding: 5rem 3rem; border-top: 0.5px solid var(--border); }
   border-radius: 2px;
 }
 .marking-label { font-size: 11px; color: var(--gray-600); }
+/* ── ARCHIVE ── */
+.archive-intro { font-size: 15px; color: var(--gray-400); max-width: 640px; line-height: 1.9; margin-bottom: 3rem; }
+.archive-entries { display: flex; flex-direction: column; gap: 1px; background: var(--border); }
+.archive-entry { background: var(--black); padding: 2.5rem; transition: background 0.2s; }
+.archive-entry:hover { background: #080808; }
+.archive-entry-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
+.archive-entry-name { font-family: var(--font-display); font-size: 26px; color: var(--white); letter-spacing: 0.04em; }
+.archive-entry-date { font-size: 11px; color: var(--gray-600); letter-spacing: 0.15em; text-transform: uppercase; }
+.archive-entry-title { font-size: 13px; color: var(--pink); margin-bottom: 1.2rem; font-style: italic; }
+.archive-entry-body { font-size: 15px; color: var(--gray-400); line-height: 1.9; max-width: 700px; }
+.archive-entry-body p { margin-bottom: 1.2rem; }
+.archive-entry-body p:last-child { margin-bottom: 0; }
+.archive-entry-body blockquote { border-left: 2px solid var(--pink); padding-left: 1.2rem; color: var(--gray-100); font-style: italic; margin: 1.5rem 0; }
+.archive-divider { width: 32px; height: 2px; background: var(--pink); margin: 1.5rem 0 0; opacity: 0.4; }
+.archive-empty { padding: 4rem 2.5rem; color: var(--gray-700); font-size: 14px; font-style: italic; }
+
 .founder-card {
   margin-top: 1px; background: rgba(255,30,140,0.05);
   border: 0.5px solid rgba(255,30,140,0.2);
@@ -310,6 +326,7 @@ footer {
     <a onclick="showPage('about')" id="nav-about">About</a>
     <a onclick="showPage('philosophy')" id="nav-philosophy">Philosophy</a>
     <a onclick="showPage('ranks')" id="nav-ranks">Ranks</a>
+    <a onclick="showPage('archive')" id="nav-archive">Archive</a>
     <a onclick="showPage('blog')" id="nav-blog">Blog</a>
   </div>
 </nav>
@@ -460,7 +477,14 @@ footer {
             <div class="ach-icon">◆</div>
             <div>
               <div class="ach-name">Thesis / Body of Work</div>
-              <div class="ach-detail">A written, recorded, or demonstrated personal synthesis of martial arts philosophy and practice.</div>
+              <div class="ach-detail">A personal synthesis of martial arts philosophy and practice — written, recorded, or demonstrated. Published to the <span onclick="showPage('archive')" style="color:var(--pink);cursor:pointer;border-bottom:1px solid rgba(255,30,140,0.3);">こころ術 archive</span>. Publication is the requirement. There is no review panel.</div>
+            </div>
+          </li>
+          <li class="achievement-item">
+            <div class="ach-icon">◆</div>
+            <div>
+              <div class="ach-name">Run an active Kokoro-Jitsu club</div>
+              <div class="ach-detail">Minimum one year of active operation.</div>
             </div>
           </li>
           <li class="achievement-item">
@@ -480,15 +504,15 @@ footer {
           <li class="achievement-item">
             <div class="ach-icon">◆</div>
             <div>
-              <div class="ach-name">Earn a Black Belt in BJJ</div>
-              <div class="ach-detail">Must be awarded by a recognized BJJ lineage.</div>
+              <div class="ach-name">Earn the highest foundational rank in a recognized martial art</div>
+              <div class="ach-detail">Outside KJ's two cornerstones. Covers belt systems, Shodan equivalents, and arts that don't use belts. Must be from a recognized lineage.</div>
             </div>
           </li>
           <li class="achievement-item">
             <div class="ach-icon">◆</div>
             <div>
-              <div class="ach-name">Teach a student to Kokoro-Jitsu Black Belt</div>
-              <div class="ach-detail">Student must meet all Black Belt requirements of the system.</div>
+              <div class="ach-name">Shugyo</div>
+              <div class="ach-detail">A deliberate, difficult personal act chosen in service of the martial arts journey. Submitted for founder approval. No prescribed form — the practitioner defines the challenge.</div>
             </div>
           </li>
         </ul>
@@ -572,6 +596,36 @@ footer {
         <div class="founder-name">FOUNDER ONLY — Brian J. Lucas · 2 Bars</div>
         <div class="founder-detail">Reserved exclusively for the founder of Kokoro-Jitsu. Not honorary — it requires completing all criteria including the Founder stripe, which only one person can hold. It is not a gift. It is a life's work.</div>
       </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══ ARCHIVE ══ -->
+<div class="page" id="page-archive">
+  <section>
+    <div class="diamonds"><div class="diamond"></div><div class="diamond ghost"></div><div class="diamond ghost"></div></div>
+    <p class="section-eyebrow">こころ術 — In Their Own Words</p>
+    <h2 class="section-title">ARCHIVE</h2>
+    <p class="archive-intro">A permanent public record of Kokoro-Jitsu black belts who have gone deep enough into the art to say something true about it in their own voice. Each entry represents the Thesis / Body of Work requirement for the first post-black-belt degree. Publication here is the requirement — there is no review panel. The archive grows chronologically. Entries are equal regardless of when they arrived or who submitted them.</p>
+
+    <div class="archive-entries">
+
+      <div class="archive-entry">
+        <div class="archive-entry-header">
+          <div class="archive-entry-name">Brian J. Lucas</div>
+          <div class="archive-entry-date">Founded 2014 · Submitted 2014–present</div>
+        </div>
+        <div class="archive-entry-title">A Collected Body of Work — Founder, Kokoro-Jitsu</div>
+        <div class="archive-entry-body">
+          <p>The body of work that qualifies the founder for this stripe is not a single document. It is the art itself.</p>
+          <p>Kokoro-Jitsu began in 2014 as an honest answer to a question no existing system could fully answer: what does a complete, living martial art look like for a real person, built from genuine understanding rather than borrowed lineage? The answer has been written, trained, taught, and refined over more than a decade — across blogs, teaching notes, curriculum documents, philosophical frameworks, and the daily practice of an art that never stopped growing.</p>
+          <p>The Ghost BJJ and Mindful Jitsu blogs documented years of synthesis in real time — tracing the parallel convergence of flow state, Ki, and mindfulness through the lens of martial training before the vocabulary for that convergence was widely available. The Kokoro-Jitsu curriculum itself — its three-act structure, its dual-track degree system, its deliberate wrongness — is a philosophical statement as much as a training system.</p>
+          <blockquote>"Absorb what is useful, discard what is useless, and add what is specifically your own."</blockquote>
+          <p>This archive exists because of that principle. The founder's entry is not more important than any that will follow. It is simply first — as the art was first — and the work behind it is the same work every practitioner in this system is invited to do: go deep, find something true, and say it in your own voice.</p>
+        </div>
+        <div class="archive-divider"></div>
+      </div>
+
     </div>
   </section>
 </div>
