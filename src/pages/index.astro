@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Kokoro-Jitsu · こころ術" current="home">
+  <div class="hero">
+    <div>
+      <div class="diamonds">
+        <div class="diamond"></div><div class="diamond ghost"></div><div class="diamond ghost"></div>
+      </div>
+      <p class="hero-eyebrow"><a href="/about">The Black Sheep</a></p>
+      <h1 class="hero-headline">ABSORB.<br>DISCARD.<br><span class="accent">ADD.</span></h1>
+      <p class="hero-sub">こころ術 · Founded 2014</p>
+      <p class="hero-tagline">A living martial art rooted in flow state, Ki, and mindful presence. Not a style to copy — a path to walk. Not a product to consume — a capacity to build.</p>
+      <div class="hero-btns">
+        <a href="/about" class="btn-primary">Explore the philosophy</a>
+        <a href="/blog" class="btn-ghost">Read the blog</a>
+      </div>
+    </div>
+    <div class="hero-logo">
+      <img src="/logo.png" alt="Kokoro-Jitsu logo" style="width:100%;max-width:520px;display:block;mix-blend-mode:screen;" />
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">2014</div><div class="hero-stat-label">Founded</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">6TH°</div><div class="hero-stat-label">Founder Rank</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">KJ</div><div class="hero-stat-label">Living System</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">∞</div><div class="hero-stat-label">Still Evolving</div></div>
+    </div>
+  </div>
+</Base>
+
+<style>
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 3rem 3rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -20%; right: 160px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(255,30,140,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--pink); margin-bottom: 1.2rem;
+  display: inline-block;
+  border-bottom: 1px solid rgba(255,30,140,0.35);
+  padding-bottom: 1px; transition: border-color 0.2s;
+}
+.hero-eyebrow:hover { border-color: var(--pink); }
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(72px, 10vw, 110px);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.6rem;
+}
+.hero-headline .accent { color: var(--pink); }
+.hero-sub { font-family: var(--font-jp); font-size: 13px; color: var(--gray-400); letter-spacing: 0.2em; margin-bottom: 2rem; }
+.hero-tagline {
+  font-size: 15px; color: var(--gray-400); line-height: 1.85;
+  max-width: 460px;
+  border-left: 2px solid var(--pink); padding-left: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-logo { display: flex; align-items: center; justify-content: center; }
+.hero-stats {
+  grid-column: 1 / -1;
+  display: flex;
+  border-top: 0.5px solid var(--border);
+  padding-top: 2rem; margin-top: 1rem;
+}
+.hero-stat { flex: 1; padding-right: 2rem; border-right: 0.5px solid var(--border); margin-right: 2rem; }
+.hero-stat:last-child { border-right: none; }
+.hero-stat-num { font-family: var(--font-display); font-size: 36px; color: var(--pink); }
+.hero-stat-label { font-size: 11px; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.15em; }
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+  .hero-logo { order: -1; }
+  .hero-logo img { max-width: 280px; }
+  .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
+  .hero-stat { border-right: none; padding-right: 0; margin-right: 0; min-width: 100px; }
+}
+</style>

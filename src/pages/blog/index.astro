@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const featured = posts.find(p => p.data.featured);
+const rest = posts.filter(p => !p.data.featured);
+---
+<Base title="Blog · Kokoro-Jitsu" current="blog">
+  <section>
+    <div class="diamonds"><div class="diamond"></div><div class="diamond ghost"></div><div class="diamond ghost"></div></div>
+    <p class="section-eyebrow">Ideas, Practice, Philosophy</p>
+    <h2 class="section-title">BLOG</h2>
+
+    <div class="blog-grid">
+      {featured && (
+        <a href={`/blog/${featured.slug}`} class="blog-card blog-featured">
+          <span class="blog-tag">{featured.data.tag}</span>
+          <div class="blog-title">{featured.data.title}</div>
+          <div class="blog-excerpt">{featured.data.excerpt}</div>
+        </a>
+      )}
+      {rest.map(post => (
+        <a href={`/blog/${post.slug}`} class="blog-card">
+          <span class="blog-tag">{post.data.tag}</span>
+          <div class="blog-title">{post.data.title}</div>
+          <div class="blog-excerpt">{post.data.excerpt}</div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

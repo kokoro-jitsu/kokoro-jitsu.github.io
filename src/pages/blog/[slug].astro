@@ -1,0 +1,46 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+<Base title={`${post.data.title} · Kokoro-Jitsu`} current="blog">
+  <section>
+    <a href="/blog" class="post-back">← Back to Blog</a>
+    <div class="post-title">{post.data.title}</div>
+    <div class="post-meta">{post.data.tag} · Kokoro-Jitsu</div>
+    <div class="post-body">
+      <Content />
+    </div>
+  </section>
+</Base>
+
+<style>
+  /* Markdown content styling inside post-body */
+  .post-body :global(h2) {
+    font-family: var(--font-display);
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    margin: 2.5rem 0 1rem;
+    color: var(--white);
+  }
+  .post-body :global(p) {
+    margin-bottom: 1.5rem;
+  }
+  .post-body :global(blockquote) {
+    border-left: 2px solid var(--pink);
+    padding-left: 1.2rem;
+    color: var(--gray-100);
+    font-style: italic;
+    margin: 2rem 0;
+  }
+</style>
