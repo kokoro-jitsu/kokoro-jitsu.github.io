@@ -16,7 +16,7 @@ const { Content } = await post.render();
 <Base title={`${post.data.title} · Kokoro-Jitsu`} current="blog">
   <section>
     <a href="/blog" class="post-back">← Back to Blog</a>
-    <div class="post-title">{post.data.title}</div>
+    <div class="post-title" style="color:var(--pink);">{post.data.title}</div>
     <div class="post-meta">{post.data.tag} · Kokoro-Jitsu</div>
     <div class="post-body">
       <Content />
