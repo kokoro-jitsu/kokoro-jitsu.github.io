@@ -2,7 +2,7 @@
 title: "The Zone Is Not a Metaphor"
 tag: "Flow State"
 excerpt: "What Csikszentmihalyi called flow and what martial artists call mushin are the same phenomenon from different directions. Neither tradition fully owns it — and that matters."
-featured: true
+featured: false
 ---
 
 Csikszentmihalyi spent decades studying optimal experience. Martial artists have been studying it for centuries. They use different words for the same thing: a state of total absorption in activity, where the self-conscious mind quiets and performance peaks.
