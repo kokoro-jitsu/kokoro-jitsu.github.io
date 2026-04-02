@@ -15,6 +15,16 @@ import Base from '../layouts/Base.astro';
         <a href="/about" class="btn-primary">Explore the philosophy</a>
         <a href="/blog" class="btn-ghost">Read the blog</a>
       </div>
+      <div class="hero-social">
+        <a href="https://www.facebook.com/profile.php?id=61578411729656" target="_blank" rel="noopener" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook Page
+        </a>
+        <a href="https://www.facebook.com/groups/1297755528905788" target="_blank" rel="noopener" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Community Group
+        </a>
+      </div>
     </div>
     <div class="hero-logo">
       <img src="/logo.png" alt="Kokoro-Jitsu logo" style="width:100%;max-width:520px;display:block;mix-blend-mode:screen;" />
@@ -27,7 +37,6 @@ import Base from '../layouts/Base.astro';
     </div>
   </div>
 </Base>
-
 <style>
 .hero {
   display: grid;
@@ -69,6 +78,28 @@ import Base from '../layouts/Base.astro';
   margin-bottom: 2.5rem;
 }
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  border: 0.5px solid var(--border);
+  padding: 6px 14px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.social-link:hover {
+  color: var(--pink);
+  border-color: var(--pink);
+}
 .hero-logo { display: flex; align-items: center; justify-content: center; }
 .hero-stats {
   grid-column: 1 / -1;
@@ -80,7 +111,6 @@ import Base from '../layouts/Base.astro';
 .hero-stat:last-child { border-right: none; }
 .hero-stat-num { font-family: var(--font-display); font-size: 36px; color: var(--pink); }
 .hero-stat-label { font-size: 11px; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.15em; }
-
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
