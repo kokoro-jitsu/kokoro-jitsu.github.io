@@ -61,6 +61,12 @@ import Base from '../layouts/Base.astro';
       <img src="/images/slideshow/slide-19.jpg" alt="Kokoro-Jitsu training" class="slide" />
       <img src="/images/slideshow/slide-20.jpg" alt="Kokoro-Jitsu training" class="slide" />
       <div class="slideshow-overlay"></div>
+      <button class="slide-arrow prev" id="kj-prev" aria-label="Previous">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="slide-arrow next" id="kj-next" aria-label="Next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
       <div class="slideshow-dots" id="kj-dots">
         <span class="dot active"></span>
         <span class="dot"></span>
@@ -183,7 +189,7 @@ import Base from '../layouts/Base.astro';
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
 }
@@ -195,6 +201,26 @@ import Base from '../layouts/Base.astro';
   pointer-events: none;
   z-index: 1;
 }
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: rgba(0,0,0,0.5);
+  border: 0.5px solid var(--border);
+  color: var(--gray-400);
+  width: 40px; height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.slide-arrow:hover {
+  color: var(--pink);
+  border-color: var(--pink);
+  background: rgba(0,0,0,0.8);
+}
+.slide-arrow.prev { left: 1rem; }
+.slide-arrow.next { right: 1rem; }
 .slideshow-dots {
   position: absolute;
   bottom: 1.2rem;
@@ -243,6 +269,7 @@ import Base from '../layouts/Base.astro';
   }
 
   function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1); }
 
   function startTimer() { timer = setInterval(next, 4000); }
   function stopTimer() { clearInterval(timer); }
@@ -250,6 +277,9 @@ import Base from '../layouts/Base.astro';
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => { stopTimer(); goTo(i); startTimer(); });
   });
+
+  document.getElementById('kj-next').addEventListener('click', () => { stopTimer(); next(); startTimer(); });
+  document.getElementById('kj-prev').addEventListener('click', () => { stopTimer(); prev(); startTimer(); });
 
   startTimer();
 </script>
