@@ -36,7 +36,55 @@ import Base from '../layouts/Base.astro';
       <div class="hero-stat"><div class="hero-stat-num">∞</div><div class="hero-stat-label">Still Evolving</div></div>
     </div>
   </div>
+
+  <div class="slideshow-section">
+    <p class="slideshow-eyebrow">The Club in Action</p>
+    <div class="slideshow" id="kj-slideshow">
+      <img src="/images/slideshow/slide-01.jpg" alt="Kokoro-Jitsu training" class="slide active" />
+      <img src="/images/slideshow/slide-02.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-03.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-04.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-05.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-06.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-07.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-08.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-09.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-10.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-11.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-12.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-13.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-14.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-15.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-16.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-17.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-18.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <img src="/images/slideshow/slide-19.jpg" alt="Kokoro-Jitsu training" class="slide" />
+      <div class="slideshow-overlay"></div>
+      <div class="slideshow-dots" id="kj-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
 </Base>
+
 <style>
 .hero {
   display: grid;
@@ -111,6 +159,58 @@ import Base from '../layouts/Base.astro';
 .hero-stat:last-child { border-right: none; }
 .hero-stat-num { font-family: var(--font-display); font-size: 36px; color: var(--pink); }
 .hero-stat-label { font-size: 11px; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.15em; }
+
+/* Slideshow */
+.slideshow-section {
+  padding: 3rem 3rem 4rem;
+  border-top: 0.5px solid var(--border);
+}
+.slideshow-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--pink); margin-bottom: 1.5rem;
+}
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+.slide.active { opacity: 1; }
+.slideshow-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.5) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+.slideshow-dots {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+.dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.dot.active { background: var(--pink); }
+
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -121,5 +221,33 @@ import Base from '../layouts/Base.astro';
   .hero-logo img { max-width: 280px; }
   .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
   .hero-stat { border-right: none; padding-right: 0; margin-right: 0; min-width: 100px; }
+  .slideshow-section { padding: 2rem 1.5rem 3rem; }
+  .slideshow { height: 300px; }
 }
 </style>
+
+<script>
+  const slides = document.querySelectorAll('#kj-slideshow .slide');
+  const dots = document.querySelectorAll('#kj-dots .dot');
+  let current = 0;
+  let timer;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  function next() { goTo(current + 1); }
+
+  function startTimer() { timer = setInterval(next, 4000); }
+  function stopTimer() { clearInterval(timer); }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => { stopTimer(); goTo(i); startTimer(); });
+  });
+
+  startTimer();
+</script>
