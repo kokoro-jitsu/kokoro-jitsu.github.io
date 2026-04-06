@@ -25,6 +25,10 @@ import Base from '../layouts/Base.astro';
           Community Group
         </a>
       </div>
+      <div class="kofi-wrap">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+        <script type='text/javascript'>kofiwidget2.init('Support Kokoro-Jitsu', '#1B3A6B', 'B0B01XC3TW');kofiwidget2.draw();</script>
+      </div>
     </div>
     <div class="hero-logo">
       <img src="/logo.png" alt="Kokoro-Jitsu logo" style="width:100%;max-width:520px;display:block;mix-blend-mode:screen;" />
@@ -154,6 +158,9 @@ import Base from '../layouts/Base.astro';
 .social-link:hover {
   color: var(--pink);
   border-color: var(--pink);
+}
+.kofi-wrap {
+  margin-top: 1.5rem;
 }
 .hero-logo { display: flex; align-items: center; justify-content: center; }
 .hero-stats {
