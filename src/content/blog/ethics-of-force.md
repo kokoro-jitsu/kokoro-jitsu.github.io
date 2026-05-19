@@ -2,7 +2,7 @@
 title: "On the Ethics of Force"
 tag: "Ethics"
 excerpt: "Capacity is what keeps you out of a fight. But if a fight finds you anyway, how a trained person thinks about proportional response matters just as much."
-featured: true
+featured: false
 ---
 
 This is not a self-defense manual. Kokoro-Jitsu does not teach self-defense as a product, and nothing here changes that. What follows is a practitioner's attempt to articulate something harder: how a person with genuine capacity should think about force when everything else has already failed.
