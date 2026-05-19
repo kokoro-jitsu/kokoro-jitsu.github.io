@@ -2,7 +2,7 @@
 title: "Perceptual Jiu-Jitsu"
 tag: "Pedagogy"
 excerpt: "Most systems hope genuine martial capacity emerges through repetition. This one develops it on purpose."
-featured: false
+featured: true
 ---
 
 Brazilian Jiu-Jitsu is a contest of alignment under force. Every position, every technique, every scramble is an alignment story. One person's base, posture, and structure being managed, disrupted, or collapsed by another's. That's the whole game underneath all of it.
