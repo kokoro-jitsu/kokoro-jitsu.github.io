@@ -5,13 +5,15 @@ excerpt: "Most systems hope genuine martial capacity emerges through repetition.
 featured: true
 ---
 
-Brazilian Jiu-Jitsu is a contest of alignment under force. Every position, every technique, every scramble is an alignment story. One person's base, posture, and structure being managed, disrupted, or collapsed by another's. That's the whole game underneath all of it.
+Brazilian Jiu-Jitsu is a contest of alignment under force. Every position is one person maintaining alignment while another disrupts it. That's the whole game underneath all of it.
+
+Consider the most basic example: someone in your closed guard leans forward, head down, posture broken. Suddenly everything opens. Not because you did something clever, but because their alignment collapsed and yours didn't. That's every submission. Every sweep. Every pass. Alignment shifting between two bodies under pressure.
 
 Perceptual Jiu-Jitsu is the pedagogy built around that reality.
 
 ## Students Don't Arrive Empty
 
-The foundational belief is this: the human nervous system is already wired to detect structural integrity, read biological motion, and sense misalignment in other bodies. You don't need to be taught to perceive alignment. You need language for what you already feel, permission to trust it, and a systematic practice for developing it into genuine expertise under pressure.
+The foundational belief is this: the human nervous system is already wired to detect structural integrity, read bodies in motion, and sense misalignment in other bodies. You don't need to be taught to perceive alignment. You need language for what you already feel, permission to trust it, and a systematic practice for developing it into genuine expertise under pressure.
 
 Most BJJ instruction assumes students arrive empty and need to be filled with technique. Perceptual Jiu-Jitsu assumes the opposite. The perception is already running. The practice is learning to read it clearly.
 
@@ -21,7 +23,7 @@ Everything in Perceptual Jiu-Jitsu is organized around a single question:
 
 *Is all of me one thing, directed at the problem?*
 
-This isn't a checklist. It's a felt sense probe that fires as a unified signal, answerable in the body before the mind has time to analyze it. A beginner running this heuristic catches gross misalignments. An expert catches micro shifts in weight distribution a moment before they become vulnerabilities. Same question, increasingly refined answer, for as long as the practice continues.
+This isn't a checklist. It's a felt sense that fires before the mind has time to analyze it. A beginner running this heuristic catches gross misalignments. An expert catches micro shifts in weight distribution a moment before they become vulnerabilities. Same question, increasingly refined answer, for as long as the practice continues.
 
 It scales with the practitioner automatically. It never becomes obsolete.
 
@@ -29,7 +31,7 @@ It scales with the practitioner automatically. It never becomes obsolete.
 
 Training is structured around two complementary practices that form a continuous learning loop.
 
-**Lens Work** is the laboratory. Practitioners explore BJJ positions and transitions at slow or frozen pace, narrating their felt experience out loud, asking what their partner notices, and investigating alignment together through shared language. Nobody owns the knowledge. Anyone's observation is valid data because alignment is governed by physics, not by rank. The instructor asks before explaining. The student's perception is primary.
+**Lens Work** is the laboratory. Practitioners explore BJJ positions and transitions at slow or frozen pace, narrating their felt experience out loud, asking what their partner notices, and investigating alignment together through shared language. Anyone's observation is usable data, refined through shared testing, because alignment is governed by physics not by rank. The instructor asks before explaining. The student's perception is primary.
 
 **Recon** is the live practice. Rolling with your current lens as an anchor, practitioners develop the capacity to notice alignment under genuine pressure and return to it when lost. Over time the anchor drops away and attention opens freely to whatever arises. The same progression from focused attention to open awareness that defines mature mindfulness practice.
 
@@ -53,8 +55,16 @@ Perceptual Jiu-Jitsu develops it on purpose.
 
 The practitioner who trains this way builds something specific: a continuously refining perceptual instrument calibrated to read alignment under force. That instrument doesn't forget techniques under pressure because it was never dependent on technique memory in the first place. It reads the situation directly and responds from what it sees.
 
-That's the capacity Marcelo Garcia has. He can tell you exactly what he's going to do and still do it because his alignment reading and management doesn't depend on your ignorance of his game. The technique is almost beside the point. The perception underneath it is everything.
+Marcelo Garcia can tell you exactly what he's going to do and still do it. Not because he's exceptional but because he's fully expressing the capacity you're training toward. His game isn't a secret. It's just that his alignment reading and management is so deeply developed that your knowledge of his intentions doesn't matter. He's not special. He's further down the same path.
 
-Perceptual Jiu-Jitsu is the practice of developing that perception on purpose, in a room where everyone is doing it together, through the slow and still and live and chaotic moments of Brazilian Jiu-Jitsu.
+This is a room full of people learning to see.
+
+That path starts with a question, and it never outgrows one.
+
+*Is all of me one thing, directed at the problem?*
+
+Ask it on the mat. Ask it in the slow moments and the chaotic ones. Ask it until you stop needing to ask it because the answer lives in your body automatically.
+
+*Notice. Drift. Return.*
 
 *Absorb. Discard. Add.*
