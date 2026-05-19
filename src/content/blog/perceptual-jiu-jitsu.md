@@ -31,7 +31,7 @@ It scales with the practitioner automatically. It never becomes obsolete.
 
 Training is structured around two complementary practices that form a continuous learning loop.
 
-**Lens Work** is the laboratory. Practitioners explore BJJ positions and transitions at slow or frozen pace, narrating their felt experience out loud, asking what their partner notices, and investigating alignment together through shared language. Anyone's observation is usable data, refined through shared testing, because alignment is governed by physics not by rank. The instructor asks before explaining. The student's perception is primary.
+**Lens Work** is the laboratory. Practitioners explore BJJ positions and transitions at slow or frozen pace, narrating their felt experience out loud, asking what their partner notices, and investigating alignment together through shared language. Anyone's observation is usable data, refined through shared testing, because alignment doesn't care about rank.. The instructor asks before explaining. The student's perception is primary.
 
 **Recon** is the live practice. Rolling with your current lens as an anchor, practitioners develop the capacity to notice alignment under genuine pressure and return to it when lost. Over time the anchor drops away and attention opens freely to whatever arises. The same progression from focused attention to open awareness that defines mature mindfulness practice.
 
