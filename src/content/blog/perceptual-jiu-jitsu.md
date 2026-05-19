@@ -7,7 +7,7 @@ featured: true
 
 Brazilian Jiu-Jitsu is a contest of alignment under force. Every position is one person maintaining alignment while another disrupts it. That's the whole game underneath all of it.
 
-Consider the most basic example: someone in your closed guard leans forward, head down, posture broken. Suddenly everything opens. Not because you did something clever, but because their alignment collapsed and yours didn't. That's every submission. Every sweep. Every pass. Alignment shifting between two bodies under pressure.
+Consider the most basic example: someone in your closed guard leans forward, head down, posture broken. Suddenly everything opens. Not because you did something clever, but because their alignment collapsed and yours didn't. That's every submission. Every sweep. Every pass. Just alignment, shifting between two bodies under pressure.
 
 Perceptual Jiu-Jitsu is the pedagogy built around that reality.
 
