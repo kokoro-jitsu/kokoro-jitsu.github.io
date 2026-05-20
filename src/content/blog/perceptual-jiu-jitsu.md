@@ -35,6 +35,8 @@ Training is structured around two complementary practices that form a continuous
 
 **Recon** is the live practice. Rolling with your current lens as an anchor, practitioners develop the capacity to notice alignment under genuine pressure and return to it when lost. Over time the anchor drops away and attention opens freely to whatever arises. The same progression from focused attention to open awareness that defines mature mindfulness practice.
 
+Both practices are facilitated through the Socratic Somatic Method: question-led investigation of felt experience where the instructor asks, the student notices, and physics answers.
+
 Lens Work makes the implicit explicit. Recon tests whether it transferred. The debrief after each brings what the body found back into language. Then it starts again.
 
 ## The Mindfulness Parallel
