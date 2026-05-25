@@ -27,13 +27,23 @@ This isn't a checklist. It's a felt sense that fires before the mind has time to
 
 It scales with the practitioner automatically. It never becomes obsolete.
 
+## The Vocabulary Must Be Felt
+
+Traditional BJJ gives you techniques with no unifying framework underneath them. Conceptual BJJ gives intellectual coherence to why techniques work. Perceptual Jiu-Jitsu insists that the conceptual framework is not the destination. It is the map. The felt sense is the territory the map is pointing at.
+
+The vocabulary we use, alignment, base, posture, structure, frames, levers, wedges, kuzushi, must be tied to a precise felt sense, not just an intellectual grasp. A word that sits on top of experience without rooting into it is not felt sense vocabulary. It is just a word.
+
+The word can arrive before or after the feeling. What matters is that genuine felt contact eventually happens. Every word in the vocabulary we share must eventually be precisely tied to a felt sense. Not just understood.
+
 ## Two Practices, One Loop
 
 Training is structured around two complementary practices that form a continuous learning loop.
 
-**Lens Work** is the laboratory. Practitioners explore BJJ positions and transitions at slow or frozen pace, narrating their felt experience out loud, asking what their partner notices, and investigating alignment together through shared language. Anyone's observation is usable data, refined through shared testing, because alignment doesn't care about rank. The instructor asks before explaining. The student's perception is primary.
+**Lens Work** is the laboratory. Techniques, positions, and transitions are vehicles for investigation, not curriculum items. Every technique contains the entire alignment framework underneath it. Practitioners pick something to explore, anyone in the room can suggest it, and then investigate together through movement, freezing when something interesting surfaces, and asking what the alignment story was that caused it. Anyone's observation is usable data, because alignment doesn't care about rank. The concept that surfaces belongs to the investigation, not to a lesson plan prepared in advance.
 
-**Recon** is the live practice. Rolling with your current lens as an anchor, practitioners develop the capacity to notice alignment under genuine pressure and return to it when lost. Over time the anchor drops away and attention opens freely to whatever arises. The same progression from focused attention to open awareness that defines mature mindfulness practice.
+The instructor is not exempt from this. When a concept surfaces for the instructor it gets named honestly. When nothing surfaces that gets named honestly too. The investigation is real for everyone in the room, including the person running it.
+
+**Recon** is the live practice. After Lens Work, whatever felt most alive in the investigation becomes an attentional anchor for rolling. Not assigned in advance. Emerged from the session. Practitioners notice when they feel it, notice when they lose it, notice when they find it again. Over time the anchor drops away and attention opens freely to whatever arises. The same progression from focused attention to open awareness that defines mature mindfulness practice.
 
 Both practices are facilitated through the Socratic Somatic Method: question-led investigation of felt experience where the instructor asks, the student notices, and physics answers.
 
@@ -45,7 +55,7 @@ Jon Kabat-Zinn defined mindfulness as paying attention in a particular way: on p
 
 Lens Work is paying attention to alignment, on purpose, in the present moment, and non-judgmentally, through the slow and still moments of BJJ.
 
-Recon is rolling with your current lens as an anchor. Notice when you've drifted. Return.
+Recon is rolling with your current anchor. Notice when you've drifted. Return.
 
 The parallel isn't cosmetic. The same neurological capacity that mindfulness practice develops, sustained attention, meta-awareness, non-judgmental observation, is exactly what Perceptual Jiu-Jitsu develops through BJJ as the medium. The mat is the cushion. Alignment is the breath.
 
